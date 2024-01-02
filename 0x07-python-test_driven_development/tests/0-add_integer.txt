@@ -16,3 +16,6 @@ if not isinstance(a, (int, float)):
     a = int(a)
     b = int(b)
     return a + b
+
+if __name__ == "__main__":
+    import doctest
