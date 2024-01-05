@@ -5,11 +5,9 @@ class Rectangle:
         self._Rectangle_height = self._validate_and_set_height(height)
         self._Rectangle_width = self._validate_and_set_width(width)
 
-
     @property
     def height(self):
         return self._Rectangle_height
-
 
     @height.setter
     def height(self, value):
@@ -22,7 +20,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         self._Rectangle_width = self._validate_and_set_width(value)
-
 
     def _validate_and_set_width(self, value):
         if not isinstance(value, int):
@@ -37,4 +34,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         return value
-
