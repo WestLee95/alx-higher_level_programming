@@ -45,4 +45,4 @@ class Rectangle:
         if self._Rectangle_width == 0 or self._Rectangle_height == 0:
             return ""
         return '\n'.join(['#' * self._Rectangle_width
-            for _ in range(self._Rectangle_height)])
+                         for _ in range(self._Rectangle_height)])
