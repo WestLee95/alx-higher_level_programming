@@ -3,18 +3,15 @@ class Rectangle:
     def __init__(self, height=0, width=0):
         self._Rectangle_width = self._validate_and_set_width(width)
         self._Rectangle_height = self._validate_and_set_height(height)
-        
-        
 
     @property
     def height(self):
         return self._Rectangle_height
 
-    
     @height.setter
     def height(self, value):
         self._Rectangle_height = self._validate_and_set_height(value)
-    
+
     @property
     def width(self):
         return self._Rectangle_width
@@ -22,7 +19,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         self._Rectangle_width = self._validate_and_set_width(value)
-    
 
     def _validate_and_set_width(self, value):
         if not isinstance(value, int):
@@ -37,21 +33,24 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         return value
-    
+
     def area(self):
         return self._Rectangle_width * self._Rectangle_height
 
     def perimeter(self):
-        return 2 * (self._Rectangle_width + self._Rectangle_height) if self._Rectangle_width > 0 and self._Rectangle_height > 0 else 0
-    
+        return 2 * (self._Rectangle_width +
+                    self._Rectangle_height) if self._Rectangle_width > 0 and
+                    self._Rectangle_height > 0
 
     def __str__(self):
         if self._Rectangle_width == 0 or self._Rectangle_height == 0:
             return ""
-        return '\n'.join(['#' * self._Rectangle_width for _ in range(self._Rectangle_height)]) 
+        return '\n'.join(['#' * self._Rectangle_width
+                          for _ in range(self._Rectangle_height)])
 
     def __repr__(self):
-        return "Rectangle({}, {})".format(self._Rectangle_height, self._Rectangle_width)
+        return "Rectangle({}, {})".format(self._Rectangle_height,
+                                          self._Rectangle_width)
 
     def __del__(self):
         print("Bye rectangle...")
