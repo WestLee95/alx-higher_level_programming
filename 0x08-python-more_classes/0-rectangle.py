@@ -5,4 +5,4 @@ class Rectangle:
     pass
 
 
-print '/n'
+print ('\n')
