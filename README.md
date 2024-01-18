@@ -20,3 +20,9 @@ TASK 6: TASK 5 - An instance number of instances is intro.d and initialized to 0
 TASK 7: TASK 6 - the print symbol is initialized to # and can be any type.
 TASK 8: TASK 7 - a static method intro.d that returns the biggest rectangle based on the area.
 TASK 9: TASK 8 - a class method that returns a square rectangle instance.
+
+
+/************/
+Other than these tasks this repo also contains several python projects and tasks and also
+	key high level C project. Such as those pertaking Algorithims.
+	Handling Big O Notation and later to come Data Structures.
